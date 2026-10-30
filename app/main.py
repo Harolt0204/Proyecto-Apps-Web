@@ -12,4 +12,4 @@ app = FastAPI(
 @app.get("/health", tags=["Health"])
 def health() -> dict[str, str]:
     """Confirma que la API responde; todavía no comprueba la base de datos."""
-    return {"status": "ok"}
+    return {"status": "error"}  # Fallo intencional del Workshop 6.
