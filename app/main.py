@@ -1,7 +1,5 @@
 """Punto de entrada de la API."""
 
-import os  # Fallo intencional del Workshop 6: importación sin usar.
-
 from fastapi import FastAPI
 
 app = FastAPI(
