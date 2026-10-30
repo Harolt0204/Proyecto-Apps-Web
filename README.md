@@ -6,10 +6,9 @@ Plataforma web para centralizar el proceso de tesis y titulación de pregrado, d
 
 ## Documentación
 
-- [Propuesta principal](Proyecto_Apps_Web.pdf): define lo que se va a desarrollar.
-- [Documento de punto de partida](documentation.md): análisis del proyecto heredado y decisiones técnicas. Sus pendientes deben contrastarse con la propuesta principal.
-- [Presentación](Thesis%20Management%20%E2%80%93%20Project%20Proposal.pptx): diapositivas de la propuesta.
-- [Guion de presentación](guion_presentacion.md): apoyo para la exposición del equipo.
+- [Documento de punto de partida](documentation.md): análisis del proyecto heredado y decisiones técnicas. Sus pendientes deben contrastarse con la propuesta aprobada del proyecto.
+- [Guía de despliegue](docs/workshop6/despliegue-render.md): configuración de Render y evidencias de publicación para el laboratorio.
+- Experimentos del Workshop 6: [fallo de Ruff](docs/workshop6/experimento-lint.md) y [fallo de la prueba de API](docs/workshop6/experimento-test.md).
 
 ## Tecnología prevista
 
