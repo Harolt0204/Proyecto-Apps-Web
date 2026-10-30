@@ -1,0 +1,31 @@
+2026-10-30T13:04:20.9578236Z ##[group]Run python -m ruff check .
+2026-10-30T13:04:20.9578450Z [36;1mpython -m ruff check .[0m
+2026-10-30T13:04:20.9605276Z shell: /usr/bin/bash -e {0}
+2026-10-30T13:04:20.9605426Z env:
+2026-10-30T13:04:20.9605584Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-30T13:04:20.9605838Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-30T13:04:20.9606084Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-30T13:04:20.9606322Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-30T13:04:20.9606557Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-30T13:04:20.9606791Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-30T13:04:20.9606979Z ##[endgroup]
+2026-10-30T13:04:20.9844456Z F401 [*] `os` imported but unused
+2026-10-30T13:04:20.9844994Z  --> app/main.py:3:8
+2026-10-30T13:04:20.9845309Z   |
+2026-10-30T13:04:20.9845493Z 1 | """Punto de entrada de la API."""
+2026-10-30T13:04:20.9845760Z 2 |
+2026-10-30T13:04:20.9846307Z 3 | import os  # Fallo intencional del Workshop 6: importación sin usar.
+2026-10-30T13:04:20.9846628Z   |        ^^
+2026-10-30T13:04:20.9846798Z 4 |
+2026-10-30T13:04:20.9846982Z 5 | from fastapi import FastAPI
+2026-10-30T13:04:20.9847226Z   |
+2026-10-30T13:04:20.9847408Z help: Remove unused import: `os`
+2026-10-30T13:04:20.9847623Z   |
+2026-10-30T13:04:20.9847781Z 2 |
+2026-10-30T13:04:20.9848109Z   - import os  # Fallo intencional del Workshop 6: importación sin usar.
+2026-10-30T13:04:20.9848419Z 3 |
+2026-10-30T13:04:20.9848566Z   |
+2026-10-30T13:04:20.9848673Z 
+2026-10-30T13:04:20.9848751Z Found 1 error.
+2026-10-30T13:04:20.9848944Z [*] 1 fixable with `--fix`.
+2026-10-30T13:04:20.9858973Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,6 @@
+-r requirements.txt
+
+# Herramientas para pruebas y revisión de código.
+httpx==0.28.1
+pytest==9.2.0
+ruff==0.17.3
