@@ -16,6 +16,8 @@ El [registro del paso fallido](evidence/01-lint-failure.log) se descargó de Git
 
 Se eliminó la importación innecesaria. No se desactivó ninguna regla de Ruff ni se cambió el comportamiento de `/health`. Tras la corrección, Ruff terminó sin errores y la prueba de la API pasó localmente.
 
+La [ejecución corregida en GitHub Actions](https://github.com/Harolt0204/Proyecto-Apps-Web/actions/runs/41060441119) terminó aprobada, con Ruff y Pytest exitosos.
+
 ## Qué demuestra
 
 La revisión estática puede detectar problemas aunque el endpoint siga respondiendo. Actions marca el trabajo como fallido y detiene sus pasos posteriores. Esto no configura por sí solo la protección de `main`: impedir una fusión con comprobaciones fallidas requiere reglas de la rama.
