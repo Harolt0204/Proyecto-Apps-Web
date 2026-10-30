@@ -17,7 +17,26 @@ Backend en FastAPI, con SQLAlchemy, Alembic y MySQL. Administradores, profesores
 
 ## Estado actual
 
-Este repositorio contiene la documentación inicial. La API todavía no está implementada.
+Este repositorio contiene la documentación inicial y una API mínima en FastAPI.
+
+### Ejecutar la API en Windows (PowerShell)
+
+Se ha verificado con Python 3.12. Desde la carpeta del proyecto:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+```
+
+Si el entorno `.venv` ya existe, omitir el primer comando. No es necesario activar el entorno para utilizar estos comandos.
+
+- API: <http://127.0.0.1:8000/health>
+- Documentación interactiva: <http://127.0.0.1:8000/docs>
+
+`GET /health` devuelve HTTP 200 con `{"status":"ok"}`. Solo confirma que la API responde; todavía no comprueba MySQL ni las reglas del proceso de titulación. Para detener el servidor, presionar `Ctrl+C` en su terminal.
+
+El código inicial está en `app/main.py`. Las pruebas automáticas y GitHub Actions se incorporarán en los siguientes pasos.
 
 El primer avance de desarrollo corresponde al Workshop 6: una API mínima, pruebas automatizadas y un flujo de integración continua con GitHub Actions.
 
