@@ -16,6 +16,8 @@ El [registro del paso fallido](evidence/02-test-failure.log) se descargó de Git
 
 Se restauró `{"status":"ok"}` en la API. La prueba permaneció sin cambios: no se debilitó la comprobación ni se aceptó la respuesta incorrecta. Tras la corrección, Ruff terminó sin errores y la prueba de la API pasó localmente.
 
+La [ejecución corregida en GitHub Actions](https://github.com/Harolt0204/Proyecto-Apps-Web/actions/runs/41061390999) terminó aprobada. Después se [fusionó el pull request #1](https://github.com/Harolt0204/Proyecto-Apps-Web/pull/1) y el [pipeline de main](https://github.com/Harolt0204/Proyecto-Apps-Web/actions/runs/41063038695) también pasó.
+
 ## Qué demuestra
 
 La revisión estática y las pruebas verifican aspectos diferentes. Una respuesta puede cumplir las reglas de código y aun así ser incorrecta para sus consumidores. Esta prueba detecta ese cambio de comportamiento antes de fusionarlo con `main`.

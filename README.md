@@ -69,6 +69,10 @@ Este flujo implementa CI: valida automáticamente los cambios. Todavía no despl
 
 El primer avance de desarrollo corresponde al Workshop 6: una API mínima, pruebas automatizadas y un flujo de integración continua con GitHub Actions.
 
+## Despliegue de demostración
+
+El repositorio incluye `render.yaml` para un servicio gratuito en Render. Consultar la [guía de despliegue](docs/workshop6/despliegue-render.md). Se requiere crear la cuenta, conectar GitHub y verificar la URL asignada. Estos archivos por sí solos no publican la API.
+
 ## Trabajo en equipo
 
 La rama principal es `main`. Los cambios de desarrollo se realizarán en ramas separadas y se revisarán mediante pull requests. El laboratorio incorporará las comprobaciones automáticas antes de fusionar cambios.
